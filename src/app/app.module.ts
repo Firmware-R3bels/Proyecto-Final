@@ -11,6 +11,7 @@ import { WidgetsSuperiorComponent } from './home/widgets-superior/widgets-superi
 import { WidgetsMedioComponent } from './home/widgets-medio/widgets-medio.component';
 import { UltimosMovimientosComponent } from './home/ultimos-movimientos/ultimos-movimientos.component';
 import { WidgetBodegasComponent } from './home/widget-bodegas/widget-bodegas.component';
+import { InventarioComponent } from './inventario/inventario.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { WidgetBodegasComponent } from './home/widget-bodegas/widget-bodegas.com
     WidgetsSuperiorComponent,
     WidgetsMedioComponent,
     UltimosMovimientosComponent,
-    WidgetBodegasComponent,  
+    WidgetBodegasComponent,
+    InventarioComponent,  
   ],
   imports: [
     BrowserModule,
