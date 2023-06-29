@@ -1,27 +1,44 @@
-.main-contenedor{
-    display: flex;
-    .side-nav{
-        width: 350px;
-        min-width: 230px;
-        min-height: calc(100vh - 70px);
-        background-color: #363636;
-        color: #fff;
-        box-shadow: 5px 5px 5px #939393;
-
-        @media only screen and (max-width: 1300px){
-
-            width: 100px;
-            min-width: 100px;
-        }
-    }
-
-    .main {
-        padding: 30px;
-    }
-}
-.button-agregar {
-    background-color: green;
+form {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
     color: white;
-    float: left;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
   

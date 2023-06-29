@@ -1,7 +1,8 @@
+<h1 class="titulo">Movimientos</h1>    
 <form [formGroup]="inventarioForm" (ngSubmit)="agregarSeccion()">
     <input formControlName="uip" placeholder="UIP">
     <input formControlName="nombre" placeholder="Nombre">
-    <input formControlName="enBodega" type="checkbox">
+    <input formControlName="enBodega" type="text" placeholder="En bodega">
     <input formControlName="zona" placeholder="Zona">
     <button type="submit">Agregar</button>
   </form>
@@ -20,7 +21,7 @@
       <tr *ngFor="let seccion of secciones">
         <td>{{ seccion.uip }}</td>
         <td>{{ seccion.nombre }}</td>
-        <td>{{ seccion.enBodega ? 'Sí' : 'No' }}</td>
+        <td>{{ seccion.enBodega }}</td>
         <td>{{ seccion.zona }}</td>
         <td><button (click)="eliminarSeccion(seccion)">Eliminar</button></td>
       </tr>

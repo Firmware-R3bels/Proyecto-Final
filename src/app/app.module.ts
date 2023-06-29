@@ -8,10 +8,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { WidgetsSuperiorComponent } from './home/widgets-superior/widgets-superior.component';
-import { WidgetsMedioComponent } from './home/widgets-medio/widgets-medio.component';
 import { UltimosMovimientosComponent } from './home/ultimos-movimientos/ultimos-movimientos.component';
-import { WidgetBodegasComponent } from './home/widget-bodegas/widget-bodegas.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { InventarioComponent } from './inventario/inventario.component';
+import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
@@ -22,14 +23,16 @@ import { InventarioComponent } from './inventario/inventario.component';
     HeaderComponent,
     SidebarComponent,
     WidgetsSuperiorComponent,
-    WidgetsMedioComponent,
     UltimosMovimientosComponent,
-    WidgetBodegasComponent,
-    InventarioComponent,  
+    InventarioComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,39 @@
+<h1 class="titulo">Bodega</h1>  
+<div class="bodega-container">
+    <div class="bodega-card" (mouseover)="showItems('bodega-central')" (mouseout)="hideItems('bodega-central')">
+      <h2>Bodega Central</h2>
+      <p>Total de Items: <span id="bodega-central-total">0</span></p>
+      <ul class="item-list" id="bodega-central-items">
+        <li *ngFor="let item of bodegaCentralItems">{{ item }}</li>
+      </ul>
+    </div>
+    <div class="bodega-card" (mouseover)="showItems('bodega-a')" (mouseout)="hideItems('bodega-a')">
+      <h2>Bodega A</h2>
+      <p>Total de Items: <span id="bodega-a-total">0</span></p>
+      <ul class="item-list" id="bodega-a-items">
+        <li *ngFor="let item of bodegaAItems">{{ item }}</li>
+      </ul>
+    </div>
+    <div class="bodega-card" (mouseover)="showItems('bodega-b')" (mouseout)="hideItems('bodega-b')">
+      <h2>Bodega B</h2>
+      <p>Total de Items: <span id="bodega-b-total">0</span></p>
+      <ul class="item-list" id="bodega-b-items">
+        <li *ngFor="let item of bodegaBItems">{{ item }}</li>
+      </ul>
+    </div>
+    <div class="bodega-card" (mouseover)="showItems('bodega-c')" (mouseout)="hideItems('bodega-c')">
+      <h2>Bodega C</h2>
+      <p>Total de Items: <span id="bodega-c-total">0</span></p>
+      <ul class="item-list" id="bodega-c-items">
+        <li *ngFor="let item of bodegaCItems">{{ item }}</li>
+      </ul>
+    </div>
+    <div class="bodega-card" (mouseover)="showItems('bodega-d')" (mouseout)="hideItems('bodega-d')">
+      <h2>Bodega D</h2>
+      <p>Total de Items: <span id="bodega-d-total">0</span></p>
+      <ul class="item-list" id="bodega-d-items">
+        <li *ngFor="let item of bodegaDItems">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+  

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.widget-container {
+    width: 300px;
+    background-color: #343434;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .card {
+    background: linear-gradient(123deg, rgba(255,168,37,1) 0%, rgba(241,239,151,1) 100%);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .movimientos {
+    margin-top: 20px;
+  }
+  
+  .movimiento {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .fecha {
+    font-weight: bold;
+  }
+  
+  .descripcion {
+    margin-left: 10px;
+  }
+  
+  /* Opcional: Estilos adicionales para resaltar el movimiento más reciente */
+  
+  .movimiento:first-child {
+    border-radius: 10px;
+    background-color: #f8f8f89b;
+  }
+  
