@@ -1,0 +1,61 @@
+.contenedor{
+    display: flex;
+    align-items: space-evenly;
+    width: 60vh;
+
+    .widget{
+
+        margin: 10px;
+        text-align: center;
+        height: 275px;
+        width: 100vh;
+        background-color: #343434;
+        border-radius: 5px;
+        color: #fff;
+        box-shadow: 5px 5px 5px #939393;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        .icon{
+
+            width: 80px;
+            font-size: 60px;
+            text-align: center;
+
+            @media only screen and (max-width: 1200px){
+
+                font-size: 45px;
+    
+            }
+        }
+
+        .valor{
+
+            text-align: center;
+            width: 175px;
+            
+            .arriba{
+
+                font-size: 30px;
+
+                @media only screen and (max-width: 1200px){
+
+                    font-size: 26px;
+            
+                }
+            }
+            .abajo{
+
+                font-size: 20px;
+                margin-top: 10px;
+
+                @media only screen and (max-width: 1200px){
+
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+}
