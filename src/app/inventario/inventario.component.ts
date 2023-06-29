@@ -13,7 +13,7 @@ export class InventarioComponent {
   constructor() {
     this.inventarioForm = new FormGroup({
       uip: new FormControl(''),
-      nombre: new FormControl(''),
+      nombre: new FormControl(''),    
       enBodega: new FormControl(''),
       zona: new FormControl('')
     });
