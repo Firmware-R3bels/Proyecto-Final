@@ -9,10 +9,11 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { WidgetsSuperiorComponent } from './home/widgets-superior/widgets-superior.component';
 import { UltimosMovimientosComponent } from './home/ultimos-movimientos/ultimos-movimientos.component';
-import { BodegaComponent } from './bodega/bodega.component';
-import { MovimientosComponent } from './movimientos/movimientos.component';
-import { LoginComponent } from './login/login.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InventarioComponent } from './inventario/inventario.component';
+import { CommonModule } from '@angular/common';
+
+
 
 @NgModule({
   declarations: [
@@ -23,15 +24,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     WidgetsSuperiorComponent,
     UltimosMovimientosComponent,
-    BodegaComponent,
-    MovimientosComponent,
-    LoginComponent,  
+    InventarioComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
+    CommonModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

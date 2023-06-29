@@ -1,0 +1,30 @@
+<h1 class="titulo">Movimientos</h1>    
+<form [formGroup]="inventarioForm" (ngSubmit)="agregarSeccion()">
+    <input formControlName="uip" placeholder="UIP">
+    <input formControlName="nombre" placeholder="Nombre">
+    <input formControlName="enBodega" type="text" placeholder="En bodega">
+    <input formControlName="zona" placeholder="Zona">
+    <button type="submit">Agregar</button>
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>UIP...</th>
+        <th>Nombre</th>
+        <th>En Bodega</th>
+        <th>Zona</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let seccion of secciones">
+        <td>{{ seccion.uip }}</td>
+        <td>{{ seccion.nombre }}</td>
+        <td>{{ seccion.enBodega }}</td>
+        <td>{{ seccion.zona }}</td>
+        <td><button (click)="eliminarSeccion(seccion)">Eliminar</button></td>
+      </tr>
+    </tbody>
+  </table>
+  
